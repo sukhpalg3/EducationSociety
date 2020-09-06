@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:Literal ID="ltTitle" runat="server"></asp:Literal></title>
+<meta name="google-site-verification" content="FTBuw6HdDCDysFE7qM3CyVFaTJo55seUjVvKfa3onCw" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<!-- Testimonials-Css -->
+	<link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="screen" property="" />
+     <!-- gallery smoothbox  -->
+    <link rel="stylesheet" href="css/smoothbox.css" type='text/css' media="all" />
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- //Custom Theme files -->
+    <!-- online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:100i,400,500,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+	<!-- //online-fonts -->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<%-- <script src="http://code.jquery.com/jquery.js"></script> --%>
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+<script src="src/skdslider.min.js"></script>
+<link href="src/skdslider.css" rel="stylesheet">
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#demo1').skdslider({
+          slideSelector: '.slide',
+          delay:5000,
+          animationSpeed:2000,
+          showNextPrev:true,
+          showPlayButton:true,
+          autoSlide:true,
+          animationType:'fading'
+        });
+
+       
+    });
+</script>
+<style type="text/css">
+  body { margin:0; padding:0;}
+  .demo-code{ background-color:#ffffff; border:1px solid #333333; display:block; padding:10px;}
+  .option-table td{ border-bottom:1px solid #eeeeee;}
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <!--/newsletter-->
+    <footer class="newsletter_right pymd-5 py-4" id="footer">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-3">
+                <div class="row mb-md-4 mb-md-3">
+					<div class="col-lg-4 col-md-4 social-info text-left">
+                       <h3 class="tittle1 foot mb-md-5 mb-4 text-white">Get in touch</h3>
+						<p>NZ Education Society </p>
+						<p class="my-2"> Auckland,New Zealand</p>
+						<p class="phone">phone: +64 xxxxx-xxxxx</p>
+						
+						<p class="phone">Mail:
+							<a href="mailto:enquiry@nzedu.com">enquiry@nzedu.com</a>
+						</p>
+
+                    </div>
+					<div class="col-lg-4 col-md-4 social-info text-left">
+					 <h3 class="tittle1 foot mb-md-5 mb-4 text-white">About Us</h3>
+                       <p>Auckland Education society,NZ is for charity of poor children. We provide free mid-day meal and books and free education to poor students and arrange free medicals checkup 24x7. We are running many primary schools and high schools in Auckland and Willington. Giving best education to deserving students.</p>
+
+                    </div>
+                   <div class="col-lg-4 col-md-4 social-info text-left">
+                       <h3 class="tittle1 foot mb-md-5 mb-4 text-white">Quick Links</h3>
+                       <div style="margin-left: 10px;">
+						<p><a href="Gallery.aspx"> Gallery</a></p>
+                       <p><a href="About.aspx"> About</a></p>
+						<p><a href="Contact.aspx"> Contact</a></p>
+                       <p><a href="FreeEducation.aspx"> Free Education</a></p>
+                       
+                       <p><a href="Sports.aspx"> Sports</a></p>
+                       
+                       <p><a href="Yoga.aspx"> Yoga</a></p>
+						</div>
+						
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+	<div class="copyright py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">      
+					<p class="copy-right mt-2">© <script>document.write(new Date().getFullYear());</script> Auckland Education society. All Rights Reserved
+						
+					</p>
+				</div>
+				<div class="col-md-4">
+					<ul class="social-icons scial justify-content-end">
+						<li class="mr-1"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+						<li class="mx-1"><a href="#"><span class="fab fa-twitter"></span></a></li>
+						<li class="mx-1"><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+						<li class="mx-1"><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--//newsletter-->
+        <!-- js -->
+   
+<!-- //js -->
+<!-- carousel(for feedback) -->
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 2,
+						nav: false
+					},
+					1000: {
+						items: 3,
+						nav: true,
+						loop: false,
+						margin: 20
+					}
+				}
+			})
+		})
+	</script>
+	
+	<!-- //carousel(for feedback) -->
+<!-- stats -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+<!-- //stats -->
+
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+        <!-- gallery smoothbox -->
+    <script src="js/smoothbox.jquery2.js"></script>
+
+
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    </div>
+    </form>
+</body>
+</html>
